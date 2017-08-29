@@ -1,0 +1,66 @@
+create vfsdemo demo.vfs
+VfsCreateCommand executed
+==========================
+open vfsdemo demo.vfs
+VfsOpenCommand executed
+==========================
+list / 
+VFS_LISTDIR: Folder not found
+==========================
+makedir /usr 
+VfsMakeDirCommand executed
+==========================
+copyin a.h /a.h
+VFS_COPYIN: Error accessing source file in host
+==========================
+makedir / 
+VFS_MAKEDIR: Folder already exists
+==========================
+list / 
+VfsListCommand executed
+==========================
+makedir /usr 
+VfsMakeDirCommand executed
+==========================
+makedir /usr 
+VFS_MAKEDIR: Folder already exists
+==========================
+makedir /bin 
+VfsMakeDirCommand executed
+==========================
+list / 
+/usr/
+/bin/
+VfsListCommand executed
+==========================
+makedir /us/a 
+VFS_MAKEDIR: Parent folder not found
+==========================
+makedir /usr/a 
+VfsMakeDirCommand executed
+==========================
+makedir /usr/a 
+VFS_MAKEDIR: Folder already exists
+==========================
+list /us 
+VFS_LISTDIR: Folder not found
+==========================
+copyin a.in /usr/a.h
+VFS_COPYIN: Error accessing source file in host
+==========================
+copyin a.h /us/a.h
+VFS_COPYIN: Error accessing source file in host
+==========================
+copyin a.in /a.h
+VFS_COPYIN: Error accessing source file in host
+==========================
+copyin a.h /usr/a.h
+VFS_COPYIN: Error accessing source file in host
+==========================
+copyout /us/a.h b.h
+VFS_COPYOUT: File not found in VFS
+==========================
+copyout /usr/a.h b.h
+VFS_COPYOUT: File not found in VFS
+==========================
+close  

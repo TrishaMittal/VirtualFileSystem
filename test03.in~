@@ -1,0 +1,21 @@
+create vfsdemo demo1.vfs
+create vfsdemo demo2.vfs
+open vfsdemo emo1.vfs
+makedir /
+list /
+makedir /demo1_folder1
+makedir /demo1_folder1/demo1_folder2.1
+makedir /demo1_folder1/demo1_folder2.2
+list /demo1_folder1
+makedir /demo2
+list /
+list 
+close
+list /
+open vfsdemo demo2.vfs
+makedir /demo2_folder1
+makedir /demo2_folder1
+makedir /demo2_folder1/demo2_folder2.1
+list /
+list /demo1
+close

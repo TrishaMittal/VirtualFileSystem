@@ -1,0 +1,16 @@
+create vfstestevalerr testevalerr.vfs
+close
+open vfstestevalerr testevalerr.vfs
+makedir /
+makedir /z
+makedir /y
+makedir /x
+makedir /w
+list /
+copyin file1.txt /file1
+copyout /file1 fileout1.txt 
+close
+fstestevalerr testevalerr.vfs
+list /
+close
+

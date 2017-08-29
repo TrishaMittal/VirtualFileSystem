@@ -1,0 +1,43 @@
+create vfsdemo demo.vfs
+open vfsdemo demo.vfs
+list /
+makedir /usr
+copyin a.h /a.h
+makedir /
+list /
+makedir /usr
+makedir /usr
+makedir /bin
+list /
+makedir /us/a
+makedir /usr/a
+makedir /usr/a
+list /us
+copyin a.in /usr/a.h
+copyin a.h /us/a.h
+copyin a.in /a.h
+copyin a.h /usr/a.h
+copyout /us/a.h b.h
+copyout /usr/a.h b.h
+close
+open vfsdemo demo.vfs
+list /
+makedir /usr
+copyin a.h /a.h
+makedir /
+list /
+makedir /usr
+makedir /usr
+makedir /bin
+list /
+makedir /us/a
+makedir /usr/a
+makedir /usr/a
+list /us
+copyin a.in /usr/a.h
+copyin a.h /us/a.h
+copyin a.in /a.h
+copyin a.h /usr/a.h
+copyout /us/a.h b.h
+copyout /usr/a.h b.h
+close

@@ -1,0 +1,68 @@
+create vfstestevalerr testevalerr.vfs
+VfsCreateCommand executed
+==========================
+close  
+VFS_ERROR: Repository not open
+==========================
+open vfstestevalerr testevalerr.vfs
+VfsOpenCommand executed
+==========================
+makedir / 
+VfsMakeDirCommand executed
+==========================
+makedir /z 
+VfsMakeDirCommand executed
+==========================
+makedir /y 
+VfsMakeDirCommand executed
+==========================
+makedir /x 
+VfsMakeDirCommand executed
+==========================
+makedir /w 
+VfsMakeDirCommand executed
+==========================
+list / 
+//z/
+//y/
+//x/
+//w/
+VfsListCommand executed
+==========================
+copyin file1.txt /file1
+VfsCopyInCommand executed
+==========================
+copyout /file1 fileout1.txt
+VfsCopyOutCommand executed
+==========================
+close  
+VfsCloseCommand executed
+==========================
+create g1 testevalerr.vfs
+VfsCreateCommand executed
+==========================
+open g1 testevalerr.vfs
+VfsOpenCommand executed
+==========================
+makedir / 
+VfsMakeDirCommand executed
+==========================
+makedir /a 
+VfsMakeDirCommand executed
+==========================
+copyin file1.txt /a/file1
+VfsCopyInCommand executed
+==========================
+copyout /a/file1 fileout2.txt
+VfsCopyOutCommand executed
+==========================
+makedir /a/b 
+VfsMakeDirCommand executed
+==========================
+makedir /c 
+VfsMakeDirCommand executed
+==========================
+close  
+VfsCloseCommand executed
+==========================
+open g1 testevalerr.vfs

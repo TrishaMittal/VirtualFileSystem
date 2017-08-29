@@ -1,0 +1,14 @@
+create vfstesteval testeval.vfs
+open vfstesteval testeval.vfs
+makedir /
+makedir /testeval2
+makedir /testeval2/testeval1
+copyin /usr/include/string.h /testeval2/akjh
+list /testeval2
+close
+open vfstesteval testeval.vfs
+list /testeval2
+copyout /testeval2/akjh b.txt
+close
+
+

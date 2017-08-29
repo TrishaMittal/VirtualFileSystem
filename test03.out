@@ -1,0 +1,24 @@
+create vfsdemo demo1.vfs
+VFS_CREATE: Unable to create host repository
+==========================
+create vfsdemo demo2.vfs
+VFS_CREATE: Unable to create host repository
+==========================
+open vfsdemo emo1.vfs
+VFS_OPEN: Unable to open host repository
+==========================
+makedir / 
+VfsMakeDirCommand executed
+==========================
+list / 
+VfsListCommand executed
+==========================
+makedir /demo1_folder1 
+VfsMakeDirCommand executed
+==========================
+makedir /demo1_folder1/demo1_folder2.1 
+VfsMakeDirCommand executed
+==========================
+makedir /demo1_folder1/demo1_folder2.2 
+VfsMakeDirCommand executed
+==========================
